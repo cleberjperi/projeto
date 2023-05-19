@@ -1,0 +1,18 @@
+Index: recipes/views.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/recipes/views.py b/recipes/views.py
+--- a/recipes/views.py	(revision 3b12d8f847e3be11509c9dfc6eedd33172f3ad41)
++++ b/recipes/views.py	(revision 3fbefbfd9bbb5ef138fe3e3dc1d897d5ef41e3ba)
+@@ -8,7 +8,7 @@
+     })
+ 
+ def contato(request):
+-    return HttpResponse("recipes/contato.html")
++    return render(request, "recipes/contato.html")
+ 
+ def sobre(request):
+     return HttpResponse("sobre")
+\ No newline at end of file
